@@ -1,7 +1,7 @@
 const CVSubmission = require("../models/CVSubmission");
 const JobPost = require("../models/JobPost");
 const User = require("../models/User");
-const Notification = require('../models/notification');
+const Notification = require('../models/Notification');
 const uploadFile = require("../utils/upload");
 
 const submitCV = async (req, res) => {
