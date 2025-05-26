@@ -14,13 +14,7 @@ const messageRoutes = require("./messageRoutes");
 // Khởi tạo router
 const router = express.Router();
 
-// Gắn từng router con với endpoint tương ứng
-router.use("/api/v1/", (res) => {
-    res.json({
-        success: true,
-        message: "Welcome to the API"
-    })
-})
+
 router.use('/api/v1/auth', authRoutes);
 router.use('/api/v1/jobs', jobRoutes);
 router.use('/api/v1/recruiter', recruiterRoutes);
