@@ -13,7 +13,7 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-
 app.use(routes);
+app.get('/', (req, res) => res.send('Server is running'));
 
 module.exports = app;
